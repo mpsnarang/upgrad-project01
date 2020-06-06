@@ -19,7 +19,7 @@ public class variables {
 
             // declaring variables in a single line
             String student1 = "Adam";
-            String student2 = "Lucy";
+            String student2 = "Mahinder";
 
             // printing values of marks and student names
             System.out.println(multiply);

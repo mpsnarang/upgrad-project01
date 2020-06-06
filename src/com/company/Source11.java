@@ -1,0 +1,67 @@
+package com.company;
+
+class Employee {
+
+    private int empId;
+    private String empFirstName;
+    private String empSecondName;
+    private double empSalary;
+
+    //Write your code here
+
+
+    public Employee(int empId, String empFirstName, String empSecondName, double empSalary) {
+        this.empId = empId;
+        this.empFirstName = empFirstName;
+        this.empSecondName = empSecondName;
+        this.empSalary = empSalary;
+    }
+
+/*    public int getEmpId() {
+        return empId;
+    }
+
+    public String getEmpFirstName() {
+        return empFirstName;
+    }
+
+    public String getEmpSecondName() {
+        return empSecondName;
+    }
+
+    public double getEmpSalary() {
+        return empSalary;
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    public void setEmpFirstName(String empFirstName) {
+        this.empFirstName = empFirstName;
+    }
+
+    public void setEmpSecondName(String empSecondName) {
+        this.empSecondName = empSecondName;
+    }
+
+    public void setEmpSalary(double empSalary) {
+        this.empSalary = empSalary;
+    }
+*/
+    public void printEmployeeDetails(){
+        System.out.println("employee full name "+ this.empFirstName+" "+this.empSecondName);
+        System.out.println("employee annual package "+this.empSalary);
+    }
+}
+
+public class Source11 {
+    public static void main(String[] args) {
+
+        //Write your code here
+        Employee E1 = new Employee(101512031, "Sushil", "Kumar", 45000.58);
+        Employee E2 = new Employee(101512032, "Tara", "Sharma",51000.99);
+        E1.printEmployeeDetails();
+        E2.printEmployeeDetails();
+    }
+}
